@@ -5,10 +5,7 @@ const Contactpage = () => {
   return (
     <div>
       Contact Page 
-      
-
-
-
+      working on forms
     </div>
   )
 }
