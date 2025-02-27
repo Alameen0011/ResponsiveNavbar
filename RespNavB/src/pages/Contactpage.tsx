@@ -1,8 +1,15 @@
 import React from 'react'
 
 const Contactpage = () => {
+  console.log("forms created")
   return (
-    <div>Contactpage</div>
+    <div>
+      Contact Page 
+      
+
+
+
+    </div>
   )
 }
 
