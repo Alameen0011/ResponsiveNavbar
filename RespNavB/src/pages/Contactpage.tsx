@@ -5,6 +5,7 @@ const Contactpage = () => {
   const [userName,setUsername] = useState<string>("")
   const [email,setEmail] = useState<string>("")
   const [isChecked,setIsChecked] = useState<boolean>(false)
+  const [gender,setGender] = useState<string>("")
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       console.log(e, ": available events")
@@ -16,6 +17,7 @@ const Contactpage = () => {
     e.preventDefault()
     console.log(userName)
     console.log(email)
+    console.log(gender)
   }
 
 
@@ -40,6 +42,18 @@ const Contactpage = () => {
           <input type = "checkbox" checked= {isChecked} onChange={(e) => setIsChecked(e.target.checked)} />
 
 
+          </label>
+
+          <br /><br />
+
+          <label>
+            <input type="radio" name="gender" value= "Male" checked = {gender === "Male"} onChange={(e) => setGender(e.target.value)}  />
+            Male
+          </label>
+
+          <label>
+            <input type="radio" name="gender" value= "female" checked = {gender === "female"} onChange={(e) => setGender(e.target.value)}  />
+            female
           </label>
        
         <p>Checkbox is {isChecked ? "Checked ✅" : "Unchecked ❌"}</p>
