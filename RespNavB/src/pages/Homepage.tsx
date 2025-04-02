@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+  const navigate = useNavigate()
   return (
     <section className="h-screen flex items-center justify-center bg-yellow-100">
       <div className="max-w-7xl w-full mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
@@ -12,7 +14,7 @@ const Homepage = () => {
           <p className="text-lg text-gray-600">
             Join Our community and make an impact
           </p>
-          <button className="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
+          <button onClick={() => navigate("/get-InTouch")} className="bg-black text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
             Get Started
           </button>
         </div>

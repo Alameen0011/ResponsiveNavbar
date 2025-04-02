@@ -5,6 +5,7 @@ import Aboutpage from "./pages/Aboutpage";
 import Contactpage from "./pages/Contactpage";
 import Infopage from "./pages/Infopage";
 import RealNav from "./components/RealNav";
+import GetInTouch from "./pages/GetInTouch";
 
 
 const App: React.FC = () => {
@@ -17,6 +18,7 @@ const App: React.FC = () => {
          <Route path="/about" element={ <Aboutpage /> } />
         <Route path="/contact" element={ <Contactpage/>} />
         <Route path="/info" element={ <Infopage/>} /> 
+        <Route path = "/get-InTouch" element = { <GetInTouch/> } />
       </Routes>
     </Router>
   );
